@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow mb-5 rounded fixed-top" style="background-color: #F3F3F3; vertical-align: middle;" id="navigation_bar">
+      <div class="container-fluid ">
+        <!-- Displaying current date in the top left corner -->
+        <a class="navbar-brand mx-5 align-items-center" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock mx-2" viewBox="0 0 16 16">
+            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+          </svg>
+          <!-- Script for extracting curent date -->
+          <script>
+            n = new Date();
+            y = n.getUTCFullYear();
+
+            d = n.getUTCDate();
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const m = new Date();
+            document.write(d + " " + monthNames[m.getMonth()] + ", " + y);
+          </script>
+        </a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar items within toggler -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="05-e-services.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="01-homepage.html">UPSIDA</a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <!-- Items within dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Service Timeline</a></li>
+                <li><a class="dropdown-item" href="06-flagship_projects.html">Flagship Projects</a></li>
+                <li><a class="dropdown-item" href="#">Office Orders</a></li>
+                <li><a class="dropdown-item" href="#">Disclosure Allottee Details</a></li>
+                <br></br>
+                <li><a class="dropdown-item" href="#">Inspection Procedure for obtaining Construction permit</a></li>
+                <li><a class="dropdown-item" href="#">Inspection Procedure for obtaining Occupancy/Completion Certificate</a></li>
+                <li><a class="dropdown-item" href="#">UPSIDA(preparation&finalization of plans)- Regulations 2004</a></li>
+                <li><a class="dropdown-item" href="#">UPSIDA - Land development & Building Regulations, 2018</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="07-property_hub.html">Property Hub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="08-available-plots.html">Available Plots</a>
+            </li>
+            <li>
+              <a class="nav-link" id="login" href="02-login.html">Login</a>
+            </li>
+            <!-- Search navbarTogglerDemo02 -->
+            <li>
+              <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div class="row" id="logo">
+        <!-- UPSIDA logo -->
+        <div class="col-lg-8 col-sm-10" id="upsidalogo">
+          <a href="01-homepage.html"><img src="images\upsida-logo.jpg" alt="https://www.onlineupsidc.com/OfcUser_pdf/upsida-logo-name.png" style="width:100%;"></a>
+        </div>
+        <div class="col-lg-2 col-sm-4" id="logo-2">
+          <img src="images/empowering business, protecting investors.jpg"alt="" style="width:190%; margin-top:10%">
+        </div>
+        <div class="d-flex justify-content-center align-items-center mb-0">
+            <h5 class="mb-0" id="land-bank"> UTTAR PRADESH LAND BANK </h5>
+        </div>
+
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center mb-0">
+          <p class="mb-0" id="title"> EXPLORE LAND BANK OF UPSIDA </p>
+      </div>
+      <div class="d-flex justify-content-center align-items-center mb-0">
+          <p style="margin-top:1%; font-weight: bold;">In 3 easy Steps: Choose | Explore | Book</p>
+      </div>
+
+      <div class ="d-flex justify-content-center align-items-center mb-0" id="pref-form" style="margin-top: 5%;">
+        <form class="preference" action="index.html" method="post">
+          <p style="font-size: 2rem; color: #184E77">LET US KNOW YOUR PREFERENCES</p>
+          <div class="form-group">
+            <span style="white-space: nowrap" class="form-inline">
+              <label for="sector">Proposed Sector</label>
+              <select class="form-select" id="sector">
+                <option selected>All Sectors</option>
+                <option value="1">Food Processing</option>
+                <option value="2">Auto Components & Automobile</option>
+                <option value="3">IT & BPM</option>
+                <option value="4">Defence</option>
+                <option value="5">Leather</option>
+                <option value="6">Pharmaceuticals</option>
+                <option value="7">Tourism & Hospitality</option>
+                <option value="8">Warehousing & Logistics</option>
+                <option value="9">Handicrafts</option>
+                <option value="10">Banking & Financial Institutions</option>
+                <option value="11">Electronics</option>
+                <option value="12">Renewable Energy</option>
+                <option value="13">Textiles & Apparels</option>
+              </select>
+            </span>
+          </div>
+          <div class="form-group" class="form-inline">
+            <span style="white-space: nowrap">
+              <label for="district">District</label>
+              <select class="form-select" id="district">
+                <option selected>All Districts</option>
+                <option value="1">Agra</option>
+                <option value="2">Aligarh</option>
+                <option value="3">Amethi</option>
+                <option value="4">Amroha</option>
+                <option value="5">Auraiya</option>
+                <option value="6">Ayodhya</option>
+                <option value="7">Badhaun</option>
+                <option value="8">Baghpat</option>
+                <option value="9">Banda</option>
+                <option value="10">Bara Banki</option>
+                <option value="11">Bareilly</option>
+                <option value="12">Basti</option>
+                <option value="13">Bulandshahr</option>
+                <option value="14">Chandauli</option>
+                <option value="15">Chitrakoot</option>
+                <option value="16">Deoria</option>
+                <option value="17">Etah</option>
+                <option value="18">Furrakhabad</option>
+                <option value="19">Fatehpur</option>
+                <option value="20">Firozabad</option>
+                <option value="21">Gautam Buddha Nagar</option>
+                <option value="22">Ghaziabad</option>
+                <option value="23">Gorakhpur</option>
+                <option value="24">Hamirpur</option>
+                <option value="25">Hardoi</option>
+                <option value="26">Hathras</option>
+                <option value="27">Jalaun</option>
+                <option value="28">Jhansi</option>
+                <option value="29">Kanpur</option>
+                <option value="30">Kanpur Dehat</option>
+                <option value="31">Lakhimpur Kheri</option>
+                <option value="32">Lalitpur</option>
+                <option value="33">Lucknow</option>
+                <option value="34">Manipuri</option>
+                <option value="35">Mathura</option>
+                <option value="36">Mau</option>
+                <option value="37">Meerut</option>
+                <option value="38">Moradabad</option>
+                <option value="39">MuzaffarNagar</option>
+                <option value="40">Pratapgarh</option>
+                <option value="41">Pragyaraj</option>
+                <option value="42">Rae Bareli</option>
+                <option value="43">Rampur</option>
+                <option value="44">Sahranpur</option>
+                <option value="45">Sant Kabur Nagar</option>
+                <option value="46">Shahjahanpur</option>
+                <option value="47">Sitapur</option>
+                <option value="48">Unnao</option>
+                <option value="49">Varanasi</option>
+              </select>
+            </span>
+          </div>
+          <div class="form-group" class="form-inline">
+            <span style="white-space: nowrap">
+              <label for="price">Estimate Price</label>
+              <select class="form-select" id="price">
+                <option selected>Any</option>
+                <option value="1">10 Lakhs to 1 Cr.</option>
+                <option value="2">1 Cr. to 10 Cr.</option>
+                <option value="3">10 Cr. to 50 Cr.</option>
+                <option value="4">50 Cr. to 100 Cr.</option>
+                <option value="5">Above 100 Cr.</option>
+              </select>
+            </span>
+          </div>
+          <div class="form-group" class="form-inline">
+            <span style="white-space: nowrap">
+              <label for="size">Plot Size (in sqmts.)</label>
+              <select class="form-select" id="size">
+                <option selected>Any</option>
+                <option value="1">200 to 1000</option>
+                <option value="2">1000 to 2000</option>
+                <option value="3">2000 to 5000</option>
+                <option value="4">5000 to 10000</option>
+                <option value="5">Above 10000</option>
+              </select>
+            </span>
+          </div>
+          <button type="submit" class="btn" id="login-btn" style="margin-left: -15%; margin-top:2%; margin-bottom: 3%">EXPLORE PROPERTIES</button>
+        </form>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center mb-0">
+          <p class="mb-0" id="title" style="margin-top: 11%"> UPSIDA LAND BANK STATISTICS </p>
+      </div>
+
+      <div id="first">
+        <div class="d-flex justify-content-center align-items-center">
+          <p style="font-weight: bold; font-size:1.3rem; margin-top:2%">Statistics as of: </p>
+          <script>
+              n = new Date();
+              y = n.getUTCFullYear();
+
+              d = n.getUTCDate();
+              const monthNames = ["January", "February", "March", "April", "May", "June",
+                                  "July", "August", "September", "October", "November", "December"
+              ];
+
+              const m = new Date();
+              document.write(d + " " + monthNames[m.getMonth()] + ", " + y);
+          </script>
+        </div>
+        <div class="box d-flex align-items-stretch justify-content-center" id ="second" style="margin-top: 5%; margin-bottom:3%">
+          <div class="col-2">
+            <h5 class="card-title">Focused</h5>
+            <h5 class="card-title"  style="margin-top: -3%">Districts</h5>
+            <img src="images/districts.png" alt="" class="stat">
+            <h4 class="card-subtitle mb-2 text-muted">53</h4>
+          </div>
+          <div class="col-2">
+            <h5 class="card-title">Focused</h5>
+            <h5 class="card-title"  style="margin-top: -3%">Sectors</h5>
+            <img src="images/sectors.png" alt="" class="stat">
+            <h4 class="card-subtitle mb-2 text-muted">53</h4>
+          </div>
+          <div class="col-2">
+            <h5 class="card-title">Industrial</h5>
+            <h5 class="card-title"  style="margin-top: -3%">Areas</h5>
+            <img src="images/industrial-areas.png" alt="" class="stat">
+            <h4 class="card-subtitle mb-2 text-muted">53</h4>
+          </div>
+          <div class="col-2">
+            <h5 class="card-title">Plot</h5>
+            <h5 class="card-title"  style="margin-top: -3%">Listings</h5>
+            <img src="images/plot-listing.png" alt="" class="stat">
+            <h4 class="card-subtitle mb-2 text-muted">53</h4>
+          </div>
+          <div class="col-2">
+            <h5 class="card-title">Total areas</h5>
+            <h5 class="card-title" style="margin-top: -3%">(in acres)</h5>
+            <img src="images/total-areas.png" alt="" class="stat">
+            <h4 class="card-subtitle mb-2 text-muted">53</h4>
+          </div>
+          <div class="col-2">
+            <h5 class="card-title">Happy</h5>
+            <h5 class="card-title"  style="margin-top: -3%">customers</h5>
+            <img src="images/happy-costumers.png" alt="" class="stat">
+            <h4 class="card-subtitle mb-2 text-muted">53</h4>
+          </div>
+        </div>
+      </div>
+      <p style="padding-bottom: 5%"></p>
+    </div>
+
+    <div class="row" id="hub-footer">
+      <div class="col-3" id="icons">
+        <div class="row">
+          <a href="https://www.facebook.com/UPSIDAGoUP"><img src="images\fb.svg" style="margin: 0 10%; width: 10%;" alt=""></a>
+          <a href="https://twitter.com/upsida"><img src="images\twitter.svg" style="width: 10%;" alt=""></a>
+        </div>
+        <div class="row">
+          <img src="images/insta.svg" alt="">
+          <img src="images/linkedin.svg" alt="">
+        </div>
+      </div>
+
+      <div class="col-8" id="copyrights-hub" >
+        <div class="row" style="margin-top: 4%">
+          <p>Content on this website is published and managed by Uttar Pradesh State Industrial Development Authority.</p>
+        </div>
+        <div class="row" style="margin-top: -2%">
+          <p>For any query regarding this website, please contact the “ADMINISTRATOR”.</p>
+        </div>
+        <div class="row" style="margin-top: -2%">
+          <p>Copyright © 2017. UPSIDC Product Version Alpha 1.0 Release</p>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      body{
+          font-family: 'Roboto', sans-serif;
+          background: #F1F1F1;
+      }
+
+      .navbar-brand{
+          font-size: medium;
+      }
+
+      #navigation_bar{
+        background-color: #F1F1F1;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: #184E77;
+        font-weight: bold;
+      }
+
+      form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f3f3f3;
+      }
+
+      form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #184E77;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+      }
+
+      form.example button:hover {
+        background: #34A0A4;
+      }
+
+      .navbar-light .navbar-nav .nav-link {
+          color: #184E77;
+          font-weight:bold;
+      }
+
+      .container{
+        background-color: white;
+      }
+
+      #logo{
+        padding-top: 7%;
+        max-width: 1280px;
+      }
+
+      #land-bank{
+        color: #9D8718;
+        font-weight: bold;
+      }
+
+      #title{
+        margin-top: 8%;
+        background-color:#FFD60A;
+        border-bottom: 3px solid #184E77;
+        padding: 0.5%;
+        font-size: 1.5em;
+        font-weight: bold;
+
+      }
+
+      form.preference select.form-select{
+        display:inline-block;
+        }
+
+      form.preference label{
+        width: 30%;
+        margin-left: -15%;
+        padding-bottom: 5%;
+      }
+
+      #district{
+        overflow-y:scroll;
+      }
+
+      form.preference{
+        border: 2px solid black;
+        border-radius: 1rem;
+        background-color: #C9E5ED;
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-bottom: 2%;
+        padding-top: 3%;
+      }
+
+      #login-btn{
+        background-color: #7EBCCE;
+        border-radius: 2em;
+        color: black;
+      }
+
+
+      #first{
+        background-color: #168AAD;
+        border-radius: 1rem;
+        color:white;
+        padding-bottom: 2%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+      }
+      .stat{
+        height: 3rem;
+        margin-top: 3%;
+      }
+
+      #second{
+        background-color: #F5F5F5;
+        opacity: 0.6;
+        margin: 3%;
+        padding-top: 5%;
+        padding-bottom: 3%;
+        border-radius: 1rem;
+        color: black;
+      }
+
+      #second .col-2 {
+        text-align: center;
+      }
+
+      #second h4{
+        margin-top: 7%;
+      }
+
+      #icons img{
+        width: 50px;
+        padding: 10px;
+      }
+
+      #hub-footer{
+        background-color: #184E77;
+        color: white;
+        margin-top:-2%;
+        padding-bottom: 1%
+      }
+
+      #icons{
+        font-size: 1em;
+        margin-top: 2%;
+        margin-bottom: 1%;
+        padding-left: 15%;
+        padding-right: 1%;
+      }
+
+      #copyrights-hub{
+        font-size: 0.8em;
+        border-left: 1px solid white;
+        padding-left: 7%;
+        margin-top: 2%;
+        margin-bottom: 1%;
+        margin-left: 7%;
+      }
+
+    </style>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+      <script src="validator.js"></script>
+      <script src="contact.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>

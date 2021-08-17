@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About UPSIDA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+
+
+<body>
+
+    <!-- Navigation_bar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow mb-5 rounded fixed-top" style="background-color: #F3F3F3; vertical-align: middle;" id="navigation_bar">
+      <div class="container-fluid ">
+        <!-- Displaying current date in the top left corner -->
+        <a class="navbar-brand mx-5 align-items-center" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock mx-2" viewBox="0 0 16 16">
+            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+          </svg>
+          <!-- Script for extracting curent date -->
+          <script>
+            n = new Date();
+            y = n.getUTCFullYear();
+
+            d = n.getUTCDate();
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const m = new Date();
+            document.write(d + " " + monthNames[m.getMonth()] + ", " + y);
+          </script>
+        </a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar items within toggler -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="01-homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="03-about.html">About UPSIDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="05-e-services.html">E-Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="04-policies.html">Policies</a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Resource Center
+              </a>
+              <!-- Items within dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Industrial Area Operating Process</a></li>
+                <li><a class="dropdown-item" href="#">Office Orders</a></li>
+                <li><a class="dropdown-item" href="#">Operating Manual 2011</a></li>
+                <li><a class="dropdown-item" href="#">Document for Approval for Building Plan</a></li>
+                <li><a class="dropdown-item" href="#">Present Rates</a></li>
+                <li><a class="dropdown-item" href="#">Development Process</a></li>
+                <li><a class="dropdown-item" href="#">Conditions for Tender</a></li>
+                <li><a class="dropdown-item" href="#">Allotment application form</a></li>
+                <li><a class="dropdown-item" href="#">Services Rules</a></li>
+                <li><a class="dropdown-item" href="#">By laws of UPSIDA</a></li>
+                <li><a class="dropdown-item" href="#">Amendment in UPSIDA land development & Building Regulations 2018</a></li>
+                <li><a class="dropdown-item" href="#">Second Amendment in UPSIDA land development</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact Us
+              </a>
+              <!-- Items within dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Head Office</a></li>
+                <li><a class="dropdown-item" href="#">Regional/Project Office</a></li>
+                <li><a class="dropdown-item" href="#">Divisional Office</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" id="login" href="02-login.html">Login</a>
+            </li>
+            <!-- Search navbar -->
+            <li>
+              <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container" id="outermost_container">
+        <!-- Logo -->
+        <div id="logo">
+            <a href="01-homepage.html"><img src="images\upsida-logo.jpg" alt="https://www.onlineupsidc.com/OfcUser_pdf/upsida-logo-name.png" style="width:100%;"></a>
+        </div>
+
+        <!-- Title  -->
+        <div class="title">
+          <p>About <span id="upsida">UPSIDA</span></p>
+        </div>
+
+        <img id="top_right_corner" src="images\top_right_abt.svg" alt="">
+
+        <!-- Content  -->
+        <div class="content">
+            <p><b>Who are we?</b></p>
+            <p>&emsp; &emsp; We are a public sector undertaking of the Corporation of Uttar Pradesh spearheading the
+                development of
+                industrial infrastructure in State since the last 56 years Pioneer in development of industrial areas,
+                we have delivered iconic industrial Areas. Townships & Industrial Parks on more than 42000 acres of
+                land, which houses more than 26,000 units providing direct employment to lacs of people.
+            </p>
+            <p>&emsp; &emsp; Providing contemporary infrastructure facilities and services to our entrepreneurs as our
+                objective, we
+                strive to build on our strength as a pillar of the pulsating industrial ecosystem of Uttar Pradesh that
+                contributes toward the economic, development of the State in particular & the Country in general. To
+                cater to the modern demands of High-tech quality infrastructure, the Corporation has ventured into many
+                new areas by developing High-tech integrated industrial townships like Trans Ganga and Saraswati
+                High-tech cities and also sector specific industrial areas like Plastic City, Agro Parks, Apparel Park,
+                Leather Park , among others.
+            </p>
+            <p><b>What we do?</b></p>
+            <p>&emsp; &emsp; With an excellent in house pool of multi disciplinary managerial experts, engineers and
+                architects,
+                compel mented by our in depth experience, today we have transformed ourselves into an organization that
+                provides integrated infrastructure facilities including industrial, residential, commercial,
+                institutional and support facilities reciprocating to the customized business requirements of our
+                clientele. Our facilities are strategically located across the state of Uttar Pradesh at prime locations
+                and near to existing clusters, raw material, hubs, highways etc and are equipped with road network,
+                electrification network, parks and green belts and providing need based space for common facilities like
+                banks, post office, dispensary, police outpost, shops business development centers, fields-hostels,
+                CETP/STP, shopping malls, expo-centers, school, colleges and universities etc.</p>
+            <p>&emsp; &emsp; Due to the specialized infrastructure and amenities provided by UPSIDC , thousands of
+                small, medium and
+                large industrial units have been setup in our various industrial Areas including Amul ,Alien Cooper,
+                Asian Paints, Arihant industries, Avon Cycle Ambuja Agro Bhushan Steel, Bharat Electronics Ltd, Birla
+                Cement, Bisleri, Coco-Cola, ConAgra Central Electronics Ltd, Dabur, Dalmia , Escorts, Gyan Diary,
+                Nerolac, Hawkins, Hindustran Petroleum, Indo-Gulf Fertilizers, JP Industries, Piaggio, Nirma, Pepsi,
+                Parle, Raunaq, Raymonds, Rathi Steels, Red Chief, Nerolac, TELCO ,TATA Fertilizer. Dey's Medical,
+                Precision Tools & Casting etc. to name a few.
+            </p>
+            <p><b>Goal:</b></p>
+            <p>&emsp; &emsp; With Uttar Pradesh rapidly rising to become one of the top business destinations in India,
+                we welcome
+                entrepreneurs desiring to set up or expand their industrial ventures to explore the opportunities being
+                offered by UPSIDC Ltd, all across the State. We assure you the best-in-class integrated infrastructure
+                and escort services completely time bound to meet your requirements.
+            </p>
+        </div>
+        <img id="bottom_left_corner" src="images\bottom_left_abt.svg" alt="">
+    </div>
+
+
+    <!-- Footer  -->
+    <div class="footer">
+        <div class="footer_content">
+            <div style="font-size: 1.5rem; padding-bottom: 0; padding-top: 2%;">SUBSCRIBE TO THE NEWS LETTER</div>
+            <div style="font-size: 1rem; padding-top: 2%;">Stay informed!</div>
+            <div id="newsletter">
+                <p><input type="email" name="" id=""> <button type="button"
+                        class="btn subscribe_button">Subscribe</button>
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-4 mt-3">
+                  <a href="https://www.facebook.com/UPSIDAGoUP"><img src="images\fb.svg" style="margin: 0 10%; width: 10%;" alt=""></a>
+                  <a href="https://twitter.com/upsida"><img src="images\twitter.svg" style="width: 10%;" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <p>Content on this website is published and managed by Uttar Pradesh State Industrial Development
+                        Authority.
+                        For any query regarding this website, please contact the “ADMINISTRATOR”.
+                        © UPSIDA, U.P., India | All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="validator.js"></script>
+    <script src="contact.js"></script>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            ;
+            width: 100%;
+            margin: auto;
+            min-width: 600px;
+            max-width: 2500px;
+            overflow-x: hidden;
+            background-color: #F1F1F1;
+
+        }
+        .navbar-brand{
+            font-size: medium;
+        }
+
+        #navigation_bar{
+          background-color: #F1F1F1;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          color: #184E77;
+          font-weight: bold;
+        }
+
+        form.example input[type=text] {
+          padding: 10px;
+          font-size: 17px;
+          border: 1px solid grey;
+          float: left;
+          width: 80%;
+          background: #f3f3f3;
+        }
+
+        form.example button {
+          float: left;
+          width: 20%;
+          padding: 10px;
+          background: #184E77;
+          color: white;
+          font-size: 17px;
+          border: 1px solid grey;
+          border-left: none;
+          cursor: pointer;
+          height: 200%;
+        }
+
+        form.example button:hover {
+          background: #34A0A4;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #184E77;
+            font-weight:bold;
+        }
+
+        #logo {
+            margin-top: 8%;
+            display: flex;
+            justify-content: center;
+            padding-top: 3%;
+        }
+
+        #outermost_container {
+            background-color: white;
+            padding-top:1% ;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+            margin-top: 5%;
+        }
+
+        .title span {
+            color: #184E77;
+        }
+
+        .content {
+            margin: 7% 15% 0;
+            padding-top: 3%;
+            padding-bottom: 10%;
+        }
+
+        .content b {
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            background-color: #184E77;
+            color: white;
+        }
+
+        .footer_content {
+            text-align: center;
+            margin-top: 1%;
+            width: 70%;
+        }
+
+        .subscribe_button {
+            color: white;
+            border: 0.1rem solid white;
+            padding: 0.2% 1%;
+        }
+
+        .footer_content input {
+            width: 62%;
+        }
+
+        .row p {
+            text-align: left;
+        }
+
+        .row img:nth-of-type(1) {
+            margin-left: 25%;
+            width: 10%;
+        }
+
+        .row img:nth-of-type(2) {
+            margin-left: 6%;
+            width: 10%;
+        }
+
+        #newsletter {
+            border-bottom: 1px solid white;
+        }
+
+        .footer_content div {
+            padding-bottom: 2%;
+        }
+
+        .row {
+            margin-top: 3%;
+        }
+
+        .subscribe_button:hover {
+            color: #184E77;
+            background-color: white;
+        }
+
+        #top_right_corner {
+            position: absolute;
+            left: 47%;
+            top: 56%;
+        }
+
+        #bottom_left_corner {
+            position: absolute;
+            top: 155%;
+            left: 14%;
+        }
+
+        @media screen and (max-width: 768px) {
+            #top_right_corner {
+                display: none;
+            }
+
+            #bottom_left_corner {
+                display: none;
+            }
+        }
+    </style>
+</body>
+
+</html>

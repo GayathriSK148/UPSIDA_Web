@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Plots</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow mb-5 rounded fixed-top" style="background-color: #F3F3F3; vertical-align: middle;" id="navigation_bar">
+      <div class="container-fluid ">
+        <!-- Displaying current date in the top left corner -->
+        <a class="navbar-brand mx-5 align-items-center" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock mx-2" viewBox="0 0 16 16">
+            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+          </svg>
+          <!-- Script for extracting curent date -->
+          <script>
+            n = new Date();
+            y = n.getUTCFullYear();
+
+            d = n.getUTCDate();
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const m = new Date();
+            document.write(d + " " + monthNames[m.getMonth()] + ", " + y);
+          </script>
+        </a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar items within toggler -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="05-e-services.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="01-homepage.html">UPSIDA</a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <!-- Items within dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Service Timeline</a></li>
+                <li><a class="dropdown-item" href="06-flagship_projects.html">Flagship Projects</a></li>
+                <li><a class="dropdown-item" href="#">Office Orders</a></li>
+                <li><a class="dropdown-item" href="#">Disclosure Allottee Details</a></li>
+                <br></br>
+                <li><a class="dropdown-item" href="#">Inspection Procedure for obtaining Construction permit</a></li>
+                <li><a class="dropdown-item" href="#">Inspection Procedure for obtaining Occupancy/Completion Certificate</a></li>
+                <li><a class="dropdown-item" href="#">UPSIDA(preparation&finalization of plans)- Regulations 2004</a></li>
+                <li><a class="dropdown-item" href="#">UPSIDA - Land development & Building Regulations, 2018</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="07-property_hub.html">Property Hub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="08-available-plots.html">Available Plots</a>
+            </li>
+            <li>
+              <a class="nav-link" id="login" href="02-login.html">Login</a>
+            </li>
+            <!-- Search navbarTogglerDemo02 -->
+            <li>
+              <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row" id="logo">
+        <!-- UPSIDA logo -->
+        <div class="col-lg-8 col-sm-10" id="upsidalogo">
+          <a href="01-homepage.html"><img src="images\upsida-logo.jpg" alt="https://www.onlineupsidc.com/OfcUser_pdf/upsida-logo-name.png" style="width:100%;"></a>
+        </div>
+        <div class="col-lg-2 col-sm-4" id="logo-2">
+          <img src="images/empowering business, protecting investors.jpg"alt="" style="width:190%; margin-top:10%">
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center mb-0">
+          <p class="mb-0" id="title">INVITES APPLICATIONS FOR ALLOTMENT OF PLOTS</p>
+      </div>
+      <div class="d-flex justify-content-center align-items-center mb-0">
+        <div class="region">
+          <span style="white-space: nowrap" class="form-inline">
+            <label for="sector">Select Region: </label>
+            <select class="form-select" id="region">
+              <option selected>Barbala</option>
+              <option value="1">Food Processing</option>
+              <option value="2">Auto Components & Automobile</option>
+              <option value="3">IT & BPM</option>
+              <option value="4">Defence</option>
+              <option value="5">Leather</option>
+              <option value="6">Pharmaceuticals</option>
+              <option value="7">Tourism & Hospitality</option>
+              <option value="8">Warehousing & Logistics</option>
+              <option value="9">Handicrafts</option>
+              <option value="10">Banking & Financial Institutions</option>
+              <option value="11">Electronics</option>
+              <option value="12">Renewable Energy</option>
+              <option value="13">Textiles & Apparels</option>
+            </select>
+          </span>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="row">
+          <div class="col-6" style="justify-content: flex-start">
+            <img src="images\Rectangle 125.png" alt="">
+            <p style="position: absolute; margin-left: 2%" >CURRENT PRICE : Rs. 1030 per sqmt</p>
+          </div>
+          <div class="col-6" style="justify-content: flex-end">
+            <img src="images\Rectangle 125.png" alt="">
+            <p style="position: absolute; margin-right: 2%" >LOCATION :  BDA Building, Nainital Road Bareilly</p>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 1%;">
+          <div class="col-6" style="justify-content: flex-start">
+            <img src="images\Rectangle 125.png" alt="">
+            <p style="position: absolute; margin-left: 2%" >TOTAL AREA : 22.22 acres</p>
+          </div>
+          <div class="col-6" style="justify-content: flex-end">
+            <img src="images\Rectangle 125.png" alt="">
+            <p style="position: absolute; margin-right: 2%" >CONTACT INFO : 0581-2543891</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="export">
+        <div class="col-6" id="search">
+            <label for="search">Search: </label>
+            <input type="text" name="search" placeholder="Type your query here and press Enter.">
+        </div>
+        <div class="col-6" style="justify-content: flex-end">
+          <button type="submit" class="btn" id="login-btn" style="margin-right: 3%;">Export to PDF</button>
+          <button type="submit" class="btn" id="login-btn" style="margin-right: -25%;">Export to Excel</button>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center mb-0" id="flagship-projects" style="margin-top:1%;">
+          <table>
+            <thead>
+              <th>Regional Office</th>
+              <th>IA Name</th>
+              <th>Plot No.</th>
+              <th>Plot Area</th>
+              <th>Start Date</th>
+              <th>Site Plan</th>
+              <th>Joint Certificate</th>
+            </thead>
+            <tr>
+              <td>BAREILLY</td>
+              <td>Babrala</td>
+              <td>B-4</td>
+              <td>20000.00</td>
+              <td>07/02/2021</td>
+              <td><a href="#">View</a></td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>BAREILLY</td>
+              <td>Babrala</td>
+              <td>B-4</td>
+              <td>20000.00</td>
+              <td>07/02/2021</td>
+              <td><a href="#">View</a></td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>BAREILLY</td>
+              <td>Babrala</td>
+              <td>B-4</td>
+              <td>20000.00</td>
+              <td>07/02/2021</td>
+              <td><a href="#">View</a></td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>BAREILLY</td>
+              <td>Babrala</td>
+              <td>B-4</td>
+              <td>20000.00</td>
+              <td>07/02/2021</td>
+              <td><a href="#">View</a></td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>BAREILLY</td>
+              <td>Babrala</td>
+              <td>B-4</td>
+              <td>20000.00</td>
+              <td>07/02/2021</td>
+              <td><a href="#">View</a></td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>BAREILLY</td>
+              <td>Babrala</td>
+              <td>B-4</td>
+              <td>20000.00</td>
+              <td>07/02/2021</td>
+              <td><a href="#">View</a></td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>BAREILLY</td>
+              <td>Babrala</td>
+              <td>B-4</td>
+              <td>20000.00</td>
+              <td>07/02/2021</td>
+              <td><a href="#">View</a></td>
+              <td><a href="#">View</a></td>
+            </tr>
+          </table>
+      </div>
+
+      <div class="notice">
+        <p>Interested parties may visit the website https://onlineupsidc.com for eligibility criteria, participation, payment procedure and other terms & conditions of e-auction/allotment.</p>
+      </div>
+      <p style="padding-top: 3%; padding-bottom: 3%;"></p>
+    </div>
+    <div class="row" id="footer">
+      <div class="col-1">
+        <p></p>
+      </div>
+      <div class="col-9" id="footer-content">
+        <p>UTTAR PRADESH STATE INDUSTRIAL DEVELOPMENT CORPORATION LIMITED, KANPUR</p>
+        <p>Office: A-1/4, LAKHANPUR, POSTBOX NO. 1050, KANPUR 208024 | Fax No: 0512-2580797 | e-mail: info@onlineupsidc.com</p>
+        <p>www.onlineupsidc.com | CIN: U26960UP1961SGC002834</p>
+      </div>
+    </div>
+
+
+        <style>
+          body{
+              font-family: 'Roboto', sans-serif;
+              background: #F1F1F1;
+          }
+
+          .navbar-brand{
+              font-size: medium;
+          }
+
+          #navigation_bar{
+            background-color: #F1F1F1;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: #184E77;
+            font-weight: bold;
+          }
+
+          form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 80%;
+            background: #f3f3f3;
+          }
+
+          form.example button {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            background: #184E77;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+          }
+
+          form.example button:hover {
+            background: #34A0A4;
+          }
+
+          .navbar-light .navbar-nav .nav-link {
+              color: #184E77;
+              font-weight:bold;
+          }
+
+          .container{
+            background-color: white;
+          }
+
+          #logo{
+            padding-top: 7%;
+            max-width: 1280px;
+          }
+
+          #title{
+            margin-top: 8%;
+            background-color:#FFD60A;
+            border-bottom: 3px solid #184E77;
+            padding: 0.5%;
+            font-size: 1.5em;
+            font-weight: bold;
+
+          }
+
+          div.region select.form-select{
+            display:inline-block;
+            width: 50%;
+            background-color: #FFD60A;
+            height: 50%;
+            font-weight: bold;
+          }
+
+          div.region label{
+            font-weight: bold;
+          }
+
+          div.region{
+            margin-top: 3%;
+          }
+
+          div.info{
+            margin-top: 3%;
+            margin-bottom:2%;
+          }
+
+          div.info .col-6{
+            display: flex;
+            flex-direction: row;
+          }
+
+          div.info img{
+            width:1rem;
+            height: 1rem;
+            margin-top: 0.7%;
+          }
+
+          #export{
+            margin-top: 5%;
+          }
+
+          #export div.col-6{
+             display: flex;
+             flex-direction: row;
+          }
+
+          #search{
+            justify-content: flex-start;
+            background-color: #184E77;
+            width: 35%;
+            border-radius: 2rem;
+            margin-left: 2%;
+          }
+
+          #export label{
+            margin-top: 1.8%;
+            color: white;
+            font-weight: bold;
+            padding-top: 1%
+          }
+
+          #export input{
+            width:80%;
+            height: 50%;
+            border: 2px solid #184E77;
+            border-radius: 1rem;
+            background-color: white;
+            margin-top: 3%;
+            margin-left: 3%;
+            padding: 2%;
+          }
+
+          #export button{
+            background-color: #184E77;
+            color: white;
+          }
+
+
+          #flagship-projects > table, th, td{
+            border: 1px solid black;
+            text-align: center;
+            padding-bottom: 1%;
+            padding-top: 1%;
+          }
+
+          #flagship-projects > table{
+            border-collapse: collapse;
+            width:100%;
+            margin-top: 4%;
+          }
+
+          #flagship-projects th{
+            background-color: #184E77;
+            color: white;
+            font-size: 1.1;
+          }
+
+          .notice{
+            background-color: #C4E0E9;
+            margin-top: 3%;
+          }
+
+          #footer{
+            background-color: #184E77;
+            color: white;
+            margin-top:-2%;
+          }
+
+          #footer-content{
+            padding: 2%;
+            padding-left: 4%;
+            border-left: 1px solid white;
+            margin-top: 2%;
+            margin-bottom: 2%
+          }
+
+        </style>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script src="validator.js"></script>
+        <script src="contact.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    </body>
+  </html>

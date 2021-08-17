@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow mb-5 rounded fixed-top" style="background-color: #F3F3F3; vertical-align: middle;" id="navigation_bar">
+      <div class="container-fluid ">
+        <!-- Displaying current date in the top left corner -->
+        <a class="navbar-brand mx-5 align-items-center" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock mx-2" viewBox="0 0 16 16">
+            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+          </svg>
+          <!-- Script for extracting curent date -->
+          <script>
+            n = new Date();
+            y = n.getUTCFullYear();
+
+            d = n.getUTCDate();
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const m = new Date();
+            document.write(d + " " + monthNames[m.getMonth()] + ", " + y);
+          </script>
+        </a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar items within toggler -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="01-homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="03-about.html">About UPSIDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="05-e-services.html">E-Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="04-policies.html">Policies</a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Resource Center
+              </a>
+              <!-- Items within dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Industrial Area Operating Process</a></li>
+                <li><a class="dropdown-item" href="#">Office Orders</a></li>
+                <li><a class="dropdown-item" href="#">Operating Manual 2011</a></li>
+                <li><a class="dropdown-item" href="#">Document for Approval for Building Plan</a></li>
+                <li><a class="dropdown-item" href="#">Present Rates</a></li>
+                <li><a class="dropdown-item" href="#">Development Process</a></li>
+                <li><a class="dropdown-item" href="#">Conditions for Tender</a></li>
+                <li><a class="dropdown-item" href="#">Allotment application form</a></li>
+                <li><a class="dropdown-item" href="#">Services Rules</a></li>
+                <li><a class="dropdown-item" href="#">By laws of UPSIDA</a></li>
+                <li><a class="dropdown-item" href="#">Amendment in UPSIDA land development & Building Regulations 2018</a></li>
+                <li><a class="dropdown-item" href="#">Second Amendment in UPSIDA land development</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact Us
+              </a>
+              <!-- Items within dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Head Office</a></li>
+                <li><a class="dropdown-item" href="#">Regional/Project Office</a></li>
+                <li><a class="dropdown-item" href="#">Divisional Office</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" id="login" href="02-login.html">Login</a>
+            </li>
+            <!-- Search navbarTogglerDemo02 -->
+            <li>
+              <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" id="outermost_container">
+        <!-- Logo -->
+        <div id="logo">
+            <img src="https://www.onlineupsidc.com/OfcUser_pdf/upsida-logo-name.png" alt="">
+        </div>
+
+        <!-- Title  -->
+        <div class="title">
+            <p>Policies</p>
+        </div>
+
+        <!-- Dropdowns -->
+
+        <div class="policies">
+            <div class="policy-container">
+                <div class="policy">
+                    <div id="head">Infrastructure & Industrial Investment Policy</div>
+                    <div><a href="#"> Industrial Investment & Employment Promotion Policy of U.P. - 2017 (English)</a>
+                    </div>
+                    <div><a href="#"> Industrial Investment & Employment Promotion Policy of U.P. - 2017 (Hindi)</a>
+                    </div>
+                </div>
+
+                <div class="policy">
+                    <div id="head">U.P. Warehousing and Logistic Policy 2018, Policy Rules and Amendments</div>
+                    <div><a href="#"> Warehousing Policy and Rules</a></div>
+                    <div><a href="#"> Warehousing Amendment</a></div>
+                    <div><a href="#"> Industry Status to Warehousing</a></div>
+                    <div><a href="#"> 25 Acres Warehousing order</a></div>
+                    <div><a href="#"> Warehouse and Logistic Policy Amendment</a></div>
+                </div>
+
+                <div class="policy">
+                    <div id="head">Textile Policy</div>
+                    <div><a href="#"> UP Textile Policy - 2014</a></div>
+                    <div><a href="#"> GO related to textile policy - 2014</a></div>
+                </div>
+
+                <div class="policy">
+                    <div id="head">Land Acquisiton Policy</div>
+                    <div><a href="#"> New Land Acquisition Policy of Uttar Pradesh (Hindi)</a></div>
+                    <div><a href="#"> New Land Acquisition Policy of Uttar Pradesh (English)</a></div>
+                </div>
+
+                <div class="policy">
+                    <div id="head">UP Electronics Manufacturing Policy</div>
+                    <div><a href="#"> UP Electronics Manufacturing Policy- 2014</a></div>
+                </div>
+
+                <div class="policy">
+                    <div id="head">Uttar Pradesh Information Technology & Startup Policy 2016</div>
+                    <div><a href="#"> Uttar Pradesh Information Technology & Startup Policy 2016</a></div>
+                </div>
+
+                <div class="policy">
+                    <div id="head">Food Processing Industrial Policy - 2012</div>
+                    <div><a href="#"> Food Processing Industrial Policy - 2012 (Highlights)</a></div>
+                    <div><a href="#"> Food Processing Industrial Policy - 2012 (English)</a></div>
+                    <div><a href="#"> Food Processing Industrial Policy - 2012 (Hindi)</a></div>
+                    <div><a href="#"> Food Processing Industrial Policy - 2012 (Collection of Government Orders
+                            Part-I)</a></div>
+                    <div><a href="#"> Food Processing Industrial Policy - 2012 (Collection of Government Orders
+                            Part-II)</a></div>
+                </div>
+
+                <div class="policy">
+                    <div id="head">Solar Power Policy - 2013</div>
+                    <div><a href="#"> Solar Power Policy Uttar Pradesh - 2013 (English)</a></div>
+                </div>
+
+                <div class="policy">
+                    <div id="head">Private Park Criteria Amendment & Scheme</div>
+                    <div><a href="#"> Private Park Criteria Amendment dt 12.06.2020 </a></div>
+                    <div><a href="#"> Private Park Scheme</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <div class="footer">
+        <div class="footer_content">
+            <div style="font-size: 1.5rem; padding-bottom: 0;">SUBSCRIBE TO THE NEWS LETTER</div>
+            <div style="font-size: 1rem;">Stay informed!</div>
+            <div id="newsletter">
+                <p><input type="email" name="" id=""> <button type="button"
+                        class="btn subscribe_button">Subscribe</button>
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-4 mt-3">
+                  <a href="https://www.facebook.com/UPSIDAGoUP"><img src="images\fb.svg" style="margin: 0 10%; width: 10%;" alt=""></a>
+                  <a href="https://twitter.com/upsida"><img src="images\twitter.svg" style="width: 10%;" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <p>Content on this website is published and managed by Uttar Pradesh State Industrial Development
+                        Authority.
+                        For any query regarding this website, please contact the “ADMINISTRATOR”.
+                        © UPSIDA, U.P., India | All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="validator.js"></script>
+    <script src="contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            ;
+            width: 100%;
+            margin: auto;
+            min-width: 600px;
+            max-width: 2500px;
+            overflow-x: hidden;
+            background-color: #F1F1F1;
+        }
+
+        .navbar-brand {
+            font-size: medium;
+        }
+
+        .navbar {
+            background-color: #F3F3F3;
+            font-weight: bold;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #184E77;
+            ;
+        }
+
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .show>.nav-link {
+            color: #184E77;
+        }
+
+        #logo {
+            margin-top: 8%;
+            display: flex;
+            justify-content: center;
+            padding-top: 3%;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+            margin-top: 5%;
+        }
+
+        #outermost_container {
+            background-color: white;
+            padding-top: 1%;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            background-color: #184E77;
+            color: white;
+        }
+
+        .footer_content {
+            text-align: center;
+            margin-top: 1%;
+            width: 70%;
+        }
+
+        .subscribe_button {
+            color: white;
+            border: 0.1rem solid white;
+            padding: 0.2% 1%;
+            width: 14%;
+        }
+
+        .footer_content input {
+            width: 62%;
+        }
+
+        .row p {
+            text-align: left;
+        }
+
+        .row img:nth-of-type(1) {
+            margin-left: 25%;
+        }
+
+        .row img:nth-of-type(2) {
+            margin-left: 6%;
+        }
+
+        #newsletter {
+            border-bottom: 1px solid white;
+        }
+
+        .footer_content div {
+            padding-bottom: 2%;
+        }
+
+        .row {
+            margin-top: 3%;
+        }
+
+        .subscribe_button:hover {
+            color: #184E77;
+            background-color: white;
+        }
+
+        .container {
+            padding-bottom: 20%;
+        }
+
+        .policies {
+            display: flex;
+            justify-content: center;
+            margin-top: 3%;
+        }
+
+        .policy {
+            text-align: center;
+            margin-bottom: 4%;
+        }
+
+        .policy {
+            border: 0.1rem solid #184E77;
+            padding-bottom: 0%;
+            border-radius: 10px;
+            font-size: 1.2rem;
+        }
+
+        .policy-container {
+            width: 90%;
+        }
+
+        #head {
+            color: white;
+            background-color: #184E77;
+            font-size: 1.7rem;
+            margin-bottom: 1%;
+            border-radius: 6px 6px 0 0;
+        }
+
+        .policy a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .policy a:hover {
+            text-shadow: rgb(182, 177, 177) 1px 1px 5px;
+        }
+    </style>
+</body>
+
+</html>

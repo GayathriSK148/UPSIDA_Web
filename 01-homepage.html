@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow mb-5 rounded fixed-top" style="background-color: #F3F3F3; vertical-align: middle;" id="navigation_bar">
+      <div class="container-fluid ">
+        <!-- Displaying current date in the top left corner -->
+        <a class="navbar-brand mx-5 align-items-center" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock mx-2" viewBox="0 0 16 16">
+            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+          </svg>
+          <!-- Script for extracting curent date -->
+          <script>
+            n = new Date();
+            y = n.getUTCFullYear();
+
+            d = n.getUTCDate();
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const m = new Date();
+            document.write(d + " " + monthNames[m.getMonth()] + ", " + y);
+          </script>
+        </a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar items within toggler -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="01-homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="03-about.html">About UPSIDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="05-e-services.html">E-Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="04-policies.html">Policies</a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Resource Center
+              </a>
+              <!-- Items within dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Industrial Area Operating Process</a></li>
+                <li><a class="dropdown-item" href="#">Office Orders</a></li>
+                <li><a class="dropdown-item" href="#">Operating Manual 2011</a></li>
+                <li><a class="dropdown-item" href="#">Document for Approval for Building Plan</a></li>
+                <li><a class="dropdown-item" href="#">Present Rates</a></li>
+                <li><a class="dropdown-item" href="#">Development Process</a></li>
+                <li><a class="dropdown-item" href="#">Conditions for Tender</a></li>
+                <li><a class="dropdown-item" href="#">Allotment application form</a></li>
+                <li><a class="dropdown-item" href="#">Services Rules</a></li>
+                <li><a class="dropdown-item" href="#">By laws of UPSIDA</a></li>
+                <li><a class="dropdown-item" href="#">Amendment in UPSIDA land development & Building Regulations 2018</a></li>
+                <li><a class="dropdown-item" href="#">Second Amendment in UPSIDA land development</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact Us
+              </a>
+              <!-- Items within dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Head Office</a></li>
+                <li><a class="dropdown-item" href="#">Regional/Project Office</a></li>
+                <li><a class="dropdown-item" href="#">Divisional Office</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" id="login" href="02-login.html">Login</a>
+            </li>
+            <!-- Search navbarTogglerDemo02 -->
+            <li>
+              <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container" style="background-color: white; padding-top: 3%;">
+      <!-- UPSIDA Logo  -->
+      <div class="d-flex justify-content-between align-items-center" id="upsidalogo">
+          <a href="01-homepage.html"><img src="images\upsida-logo.jpg" alt="https://www.onlineupsidc.com/OfcUser_pdf/upsida-logo-name.png" style="width:100%;"></a>
+      </div>
+
+      <!-- Carousel of development projects -->
+      <div id="carouselExampleCaptions" class="carousel slide px-5  pt-0 mb-0" data-bs-ride="carousel">
+        <p class="d-flex justify-content-center align-items-center mt-4 mb-0 pb-0 px-0 text-center" id="Carouselheading">PROMOTING INDUSTRIAL PROGRESS WITH A PLETHORA OF INVESTOR FRIENDLY REFORMS</p>
+        <div class="carousel-inner">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-item active">
+            <img src="images\transganga.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Trans-Ganga City</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images\Saraswati.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Saraswati HI-TECH City</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images\transdelhi.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Trans Delhi Signature</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images\plastic-city.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Plastic City</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images\amri-kolka.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Amritsar-Kolkatta Industrial Corridor</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images\perfume2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Perfume Park</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- INTRODUCTION -->
+      <div class="d-flex justify-content-center align-items-center mb-0" id="introduction">
+            <p class="mb-0">WELCOME TO <span>UPSIDA!</span></p>
+        </div>
+
+      <div class="row justify-content-center" id="introductionmatter">
+          <div class="col-5 introductoryparagraph">
+            <img class="svg1" src="images\Group 101.svg" alt="">
+            <img class="svg2" src="images\Group 9.svg" alt="">
+            <p>Uttar Pradesh has been a leader in the industrial sector, and we have achieved this position with
+               consistent efforts. We have taken right steps and in effect industries are not just coming to Uttar
+               Pradesh from other states, but huge investments are flowing in from overseas also. Foreign investors
+               are eager to invest in various sectors in the state after being convinced of the change in culture
+               and ease of doing business. UPSIDA is the nodal agency for developing industrial infrastructure. UPSIDA
+               has been spearheading the industrial promotion in the State and has been instrumental in keeping the
+               State at the numero uno position among the states for several decades now. Till date, UPSIDA has
+               developed a record 154 industrial areas on approximately 43,788.54 acres of land across   Uttar Pradesh.
+            </p>
+          </div>
+
+          <!-- Carousel of Mnisters & Officers involved -->
+          <div class="col-5" style="margin-top: 5%;">
+            <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators carousel2 justify-content-center">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner carousel2">
+                <div class="carousel-item active">
+                  <img src="images\Group 1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\Group 2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\Group 3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\Group 4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\Group 5.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+      </div>
+
+      <!-- News AND Tenders -->
+      <div class="row" style="margin-top: 11%; overflow: hidden; height: 1000px;">
+        <div class="col-6 " style="width: 35%; margin-left: 8%;">
+          <div id="news" class="d-flex justify-content-center mb-0 align-items-center">
+            <p class="mb-0 " style="font-size: 2.5rem;">News And Tenders</p>
+          </div>
+          <div class="newslist">
+            <div class="list-group p-2">
+              <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                Notice for U.P. State INDUSTRIAL DEVELOPMENT
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for e-Tenders</a>
+              <a href="#" class="list-group-item list-group-item-action">e-Bid Notice for Appointment of....</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for U.P. State INDUSTRIAL DEVELOPMENT</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for U.P. State INDUSTRIAL DEVELOPMENT</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for e-Tenders</a>
+              <a href="#" class="list-group-item list-group-item-action">e-Bid Notice for Appointment of....</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for U.P. State INDUSTRIAL DEVELOPMENT</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for U.P. State INDUSTRIAL DEVELOPMENT</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for U.P. State INDUSTRIAL DEVELOPMENT</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for e-Tenders</a>
+              <a href="#" class="list-group-item list-group-item-action">e-Bid Notice for Appointment of....</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for U.P. State INDUSTRIAL DEVELOPMENT</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for U.P. State INDUSTRIAL DEVELOPMENT</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for U.P. State INDUSTRIAL DEVELOPMENT</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for U.P. State INDUSTRIAL DEVELOPMENT</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for U.P. State INDUSTRIAL DEVELOPMENT</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for e-Tenders</a>
+              <a href="#" class="list-group-item list-group-item-action">e-Bid Notice for Appointment of....</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for U.P. State INDUSTRIAL DEVELOPMENT</a>
+              <a href="#" class="list-group-item list-group-item-action">Notice for U.P. State INDUSTRIAL DEVELOPMENT</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-6">
+          <p style="position: relative; top: 0%; left: 21%; font-size: 2rem;">Quick Links</p>
+          <img id="quicklinks" src="images\quick-links.svg" alt="">
+
+          <div class="link1" style="margin-top: 6%;"><a href="05-e-services.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                 fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                            </svg>E-Services</a></div>
+          <div class="link1 "><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                 fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                            </svg>GIS</a></div>
+          <div class="link1 "><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                 fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                            </svg>Apply here for Online Services</a></div>
+          <div class="link1 "><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                 fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                            </svg>Track Applications</a></div>
+          <div class="link1 "><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                 fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                            </svg>Application for warehouse and Logistics</a></div>
+          <div class="link1 "><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                 fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                            </svg>Awards</a></div>
+          <div class="link1 "><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                 fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                            </svg>Newsletter(Edition-1)</a></div>
+          <div class="link1 "><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                 fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                            </svg>Newsletter(Edition-2)</a></div>
+
+        </div>
+      </div>
+
+      <!-- Important links -->
+      <div class="importantlinks">
+        <img src="images\Line 6.svg" alt="" style="position: absolute;top: 104%;">
+        <p class="mb-0">Important Links</p>
+      </div>
+      <div class="row justify-content-center importantlinksblock">
+        <div class="col-4">
+          <a href="http://www.udyogbandhu.com/"><img src="images\IMPLINK1.png" alt=""></a>
+          <p><a href="http://www.udyogbandhu.com/">Department of Infrastructure & Industrial Development</a></p>
+        </div>
+        <div class="col-4">
+          <a href="https://up.gov.in/"><img src="images\IMPLINK2.png" alt=""></a>
+          <p><a href="https://up.gov.in/">Government of Uttar Pradesh Official Website</a></p>
+        </div>
+        <div class="col-4">
+          <a href="https://etender.up.nic.in/nicgep/app"><img src="images\IMPLINK3.png" alt=""></a>
+          <p><a href="https://etender.up.nic.in/nicgep/app">eProcurement System Government of Uttar Pradesh</a></p>
+        </div>
+      </div>
+      <p style="padding-bottom:15%;"></p>
+    </div>
+
+    <!-- Footer -->
+    <div class="row" id="footer">
+      <div class="container text-center">
+        <div>
+          <p>Subscribe to the Newsletter</p>
+        </div>
+        <div>
+          <p>Stay Informed!</p>
+        </div>
+        <div>
+          <p><input type="text" name="" id=""><button type="button" class="btn subscribebutton">Subscribe</button></p>
+        </div>
+        <div class="row" style="margin: 3% 17%;">
+          <div class="col-lg-4 col-sm-12" id="icons">
+            <a href="https://www.facebook.com/UPSIDAGoUP"><img src="images\fb.svg" style="margin: 0 10%; width: 10%;" alt=""></a>
+            <a href="https://twitter.com/upsida"><img src="images\twitter.svg" style="width: 10%;" alt=""></a>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <p>Content on this website is published and managed by Uttar Pradesh State Industrial Development Authority.
+                For any query regarding this website, please contact the “ADMINISTRATOR”.
+                © UPSIDA, U.P., India | All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="validator.js"></script>
+    <script src="contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            width: 100%;
+            margin: auto;
+            min-width: 600px;
+            max-width: 2500px;
+            overflow-x: hidden;
+            background-color: #F1F1F1;
+        }
+
+        .navbar-brand{
+            font-size: medium;
+        }
+
+        #navigation_bar{
+          background-color: #F1F1F1;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          color: #184E77;
+          font-weight: bold;
+        }
+
+        form.example input[type=text] {
+          padding: 10px;
+          font-size: 17px;
+          border: 1px solid grey;
+          float: left;
+          width: 80%;
+          background: #f3f3f3;
+        }
+
+        form.example button {
+          float: left;
+          width: 20%;
+          padding: 10px;
+          background: #184E77;
+          color: white;
+          font-size: 17px;
+          border: 1px solid grey;
+          border-left: none;
+          cursor: pointer;
+        }
+
+        form.example button:hover {
+          background: #34A0A4;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #184E77;
+            font-weight:bold;
+        }
+
+        #carouselExampleCaptions {
+            margin: 0 6%;
+            padding-bottom: 5%;
+        }
+
+        img.d-block {
+            width: 500px;
+            height: 500px;
+        }
+
+        #Carouselheading {
+            font-size: 2.5rem;
+            background-color: #184E77;
+            color: #C9E5ED;
+            text-align: center;
+
+        }
+
+        .carousel-caption{
+          color: white;
+          background-color:#184E77;
+        }
+
+        .carousel-caption p{
+          text-align: center;
+        }
+        #upsidalogo {
+            margin-top: 7%;
+            margin-left: 9%;
+            margin-right: 9%;
+        }
+
+        #upsidalogo img:nth-of-type(1) {
+            height: fit-content;
+            width: auto;
+        }
+
+        #upsidalogo img:nth-of-type(2) {
+            margin-left: 8%;
+        }
+
+        #login {
+            color: #34A0A4;
+        }
+
+        .bi bi-search {
+            color: black;
+        }
+
+        #introduction {
+            font-size: 4rem;
+        }
+
+        #introduction span {
+            color: #184E77;
+        }
+
+        #introductionmatter {
+            margin-top: 6.1%;
+        }
+
+
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .introductoryparagraph {
+            margin-right: 5%;
+            width: 32%;
+            margin-top: -1%;
+            font-size: 1.3rem;
+        }
+
+        /* polyline {
+            stroke-width: 2;
+        } */
+
+        .svg1 {
+            position: relative;
+            width: 38%;
+            height: auto;
+            left: 76%;
+            top: 6%;
+        }
+
+        .svg2 {
+            position: relative;
+            width: 38%;
+            height: auto;
+            left: -52%;
+            top: 92%;
+
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        .col-5 {
+            margin-left: 3%;
+            width: 38.666667%;
+        }
+
+        #news {
+            background-color: #184E77;
+            width: 100%;
+            color: white;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        .newslist {
+            overflow-y: scroll;
+            height: 31em;
+            width: 100%;
+            border: 0.5rem solid #184E77;
+            border-radius: 0 0 1rem 1rem;
+        }
+
+        .list-group-item {
+            background-color: #d6e2e2;
+        }
+
+        #quicklinks {
+            position: relative;
+            width: 100%;
+            height: 19%;
+            left: -16%;
+            top: -0.5%;
+
+        }
+
+        .link1 {
+            background: #7EBCCE75;
+            border-radius: 149px;
+            padding-bottom: 1.3%;
+            font-size: 1.2rem;
+            position: relative;
+            left: 26.5%;
+            transition: all 0.5s;
+            width: 60%;
+        }
+
+        .link1>a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .link1:nth-of-type(1) {
+            top: -18.65%;
+        }
+
+        .link1:nth-of-type(2) {
+            top: -17.8%;
+        }
+
+        .link1:nth-of-type(3) {
+            top: -16.9%;
+        }
+
+        .link1:nth-of-type(4) {
+            top: -16.1%;
+        }
+
+        .link1:nth-of-type(5) {
+            top: -15.1%;
+        }
+
+        .link1:nth-of-type(6) {
+            top: -14.1%;
+        }
+
+        .link1:nth-of-type(7) {
+            top: -13.5%;
+        }
+
+        .link1:nth-of-type(8) {
+            top: -12.6%;
+        }
+
+        .link1:hover {
+            box-shadow: 5px 5px 20px;
+        }
+
+        .importantlinks {
+            position: absolute;
+            margin-top: -22%;
+            left: 12%;
+            font-size: 2rem;
+        }
+
+        .importantlinksblock {
+            position: absolute;
+            margin-top: -17%;
+            margin-left: 2%;
+            border: 0.2rem solid black;
+            padding: 3%;
+        }
+
+        .importantlinksblock p {
+            text-align: center;
+            position: relative;
+            left: -8%;
+            margin-top: -1%;
+            padding-top: 2%;
+        }
+
+        .importantlinksblock a {
+            color: #184E77;
+            text-decoration: none;
+        }
+
+        #footer {
+            background-color: #184E77;
+            margin-top: -3%;
+            padding-top: 3%
+        }
+
+        #footer div p {
+            text-align: center;
+            color: white;
+        }
+
+        #footer div input {
+            width: 38%;
+            margin-left: 5%;
+        }
+
+        #footer div:nth-of-type(1) p {
+            font-size: 1.5rem;
+            margin-bottom: 0%;
+        }
+
+        #footer div:nth-of-type(2) p {
+            font-size: 1rem;
+            margin-bottom: 3%;
+        }
+
+        #footer div:nth-of-type(3) p {
+            font-size: 1.2rem;
+            padding-bottom: 2%;
+            border-bottom: 2px solid white;
+            margin: 0 13%;
+        }
+
+        #footer div:nth-of-type(4) p {
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        #icons {
+            display: flex;
+            height: 1%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .subscribebutton {
+            color: white;
+            border: 1px solid white;
+            padding: 0.4% 1%;
+        }
+
+        .subscribebutton:hover {
+            background-color: white;
+            color: #184E77;
+        }
+    </style>
+
+</body>
+
+</html>
